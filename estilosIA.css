@@ -1,0 +1,177 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para los radio buttons y categorías */
+.categorias {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cursos {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.curso {
+    width: 200px;
+    padding: 10px;
+    background-color: #ccc;
+    border: 2px dashed #999;
+    margin: 5px;
+    color: #000000; 
+}
+
+.custom-radio{
+    display: block;
+    text-align: center;
+    position: relative;
+    padding-left: 30px; 
+    margin-right: 15px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+}
+
+.custom-radio:hover{
+    color:yellow;
+}
+
+#option1Radio,#option2Radio,#option3Radio{
+    display: none;
+}
+
+#option1Radio:checked ~ #option1Text,
+#option2Radio:checked ~ #option2Text,
+#option3Radio:checked ~ #option3Text{
+    display: flex;
+}
+
+
+/* Media queries para hacer la página responsive */
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+    
+    .categorias {
+        margin-top: 20px;
+    }
+
+    .curso {
+        width: 100%;
+    }
+}
+
+/* Estilos generales */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+.contact-form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la información de contacto */
+.contacto-info {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.desarrolladora {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.telefono,
+.mail {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Estilo para el enlace de correo electrónico */
+.mail a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.mail a:hover {
+    text-decoration: underline;
+}
